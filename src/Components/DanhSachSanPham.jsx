@@ -6,7 +6,7 @@ export default class DanhSachSanPham extends Component {
     return this.props.mangGiay.map(sp => {
       return (
         <div className="col-4 my-3" key={sp.id}>
-            <SanPham sp={sp} showDetail={this.props.showDetail}/>          
+            <SanPham sp={sp} showDetail={this.props.showDetail} add={this.props.add}/>          
         </div>
       )
     })

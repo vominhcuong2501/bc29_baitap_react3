@@ -2,14 +2,14 @@ import React, { Component } from "react";
 
 export default class ModalSanPham extends Component {
   renderModal = () => {
-    let {mangModal} = this.props;
+    let {spModal} = this.props;
       return (
-        <div className="card" key={mangModal.id}>
-          <img className="card-img-top" src={mangModal.image} height={300} />
+        <div className="card" key={spModal.id}>
+          <img className="card-img-top" src={spModal.image} height={300} />
           <div className="card-body">
-            <h4 className="card-title">{mangModal.name}</h4>
-            <p className="card-text text-left">Price: {mangModal.price}</p>
-            <p className="card-text text-left">Description: {mangModal.description}</p>            
+            <h2 className="card-title text-danger">{spModal.name}</h2>
+            <p className="card-text text-left text-info">Price: {spModal.price}</p>
+            <p className="card-text text-left text-secondary">Description: {spModal.description}</p>            
           </div>
         </div>
       );
